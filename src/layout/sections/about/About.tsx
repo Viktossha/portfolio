@@ -9,20 +9,20 @@ export const About = () => {
         <StyledAbout>
             <SectionTitle>ABOUT</SectionTitle>
             <FlexWrapper>
-                <div>
+                <StyledDescription>
                     <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
                         consequatur aut perferendis doloribus asperiores repellat quia voluptas sit aspernatur te natus
                         accusan. maiores alias consequatur aut equatur aut perferendi.</p>
                     <button>about me</button>
-                </div>
+                </StyledDescription>
 
-                <div>
+                <StyledSkills>
                     <Skill title={'Photoshop'}/>
                     <Skill title={'Illustrator'}/>
                     <Skill title={'Figma'}/>
                     <Skill title={'after effect'}/>
                     <Skill title={'indesign'}/>
-                </div>
+                </StyledSkills>
             </FlexWrapper>
         </StyledAbout>
     );
@@ -30,4 +30,12 @@ export const About = () => {
 
 const StyledAbout = styled.section`
 background-color: mistyrose;
+`
+
+const StyledDescription = styled.div`
+
+`
+
+const StyledSkills = styled.div`
+
 `
