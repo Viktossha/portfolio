@@ -3,6 +3,7 @@ import {Header} from "./layout/header/Header";
 import {Main} from "./layout/sections/main/Main";
 import {About} from "./layout/sections/about/About";
 import {Works} from "./layout/sections/works/Works";
+import {Achievements} from "./layout/sections/achievements/Achievements";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
             <Main/>
             <About/>
             <Works/>
+            <Achievements/>
         </div>
     );
 }
