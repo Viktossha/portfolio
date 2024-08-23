@@ -30,6 +30,7 @@ export const About = () => {
 
 const StyledAbout = styled.section`
 background-color: mistyrose;
+    min-height: 100vh;
 `
 
 const StyledDescription = styled.div`
