@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {Menu} from "../../../components/menu/Menu";
 import {Logo} from "../../../components/logo/Logo";
+import {Button} from "../../../components/Button";
 
 export const Contact = () => {
     return (
@@ -10,7 +11,7 @@ export const Contact = () => {
                 <Logo/>
                 <p>Subscribe to newsletter to get some updates related with branding, designs and more.</p>
                 <input type="text" placeholder={'write your email address'}/>
-                <button>subscribe it</button>
+                <Button>subscribe it</Button>
             </Subscription>
 
             <Menu menuItems={['Home', 'About', 'Services', 'Portfolio', 'Blogs', 'Contact']}/>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Skill} from "./skill/Skill";
+import {Button} from "../../../components/Button";
 
 export const About = () => {
     return (
@@ -13,7 +14,7 @@ export const About = () => {
                     <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
                         consequatur aut perferendis doloribus asperiores repellat quia voluptas sit aspernatur te natus
                         accusan. maiores alias consequatur aut equatur aut perferendi.</p>
-                    <button>about me</button>
+                    <Button>about me</Button>
                 </StyledDescription>
 
                 <StyledSkills>

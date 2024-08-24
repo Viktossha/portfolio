@@ -6,6 +6,7 @@ import {News} from "./news/News";
 import news_1 from "../../../assets/images/blogs_1.webp"
 import news_2 from "../../../assets/images/blogs_2.webp"
 import news_3 from "../../../assets/images/blogs_3.webp"
+import {Button} from "../../../components/Button";
 
 export const Blogs = () => {
     return (
@@ -16,7 +17,7 @@ export const Blogs = () => {
                <News title={'basic typography rules for ui designing'} date={'Graphic Design   /   July 1, 2021'} src={news_2}/>
                <News title={'top 10 graphic designs review in 2021'} date={'Graphic Design   /   July 1, 2021'} src={news_3}/>
             </FlexWrapper>
-            <a href="">view all blogs</a>
+            <Button>view all blogs</Button>
         </StyledBlogs>
     );
 };
