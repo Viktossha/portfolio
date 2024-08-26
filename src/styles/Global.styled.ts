@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import mainPhoto from '../assets/images/main-photo.webp'
 
 export const GlobalStyle = createGlobalStyle`
     
@@ -30,5 +31,13 @@ export const GlobalStyle = createGlobalStyle`
     button {
         background-color: unset;
         border: none;
+    }
+    
+    header, section:first-of-type {
+        background-image: url(${mainPhoto});
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed; //почему это работает??
+        color: #FFFFFF
     }
 `

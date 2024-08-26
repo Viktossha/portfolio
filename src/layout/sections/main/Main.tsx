@@ -2,7 +2,7 @@ import React from 'react';
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import styled from "styled-components";
 import {Button} from "../../../components/Button";
-
+import mainPhoto from '../../../assets/images/main-photo.webp'
 export const Main = () => {
     return (
         <StyledMain>
@@ -15,8 +15,8 @@ export const Main = () => {
     );
 };
 
-const StyledMain = styled.div`
-    background-color: powderblue;
+const StyledMain = styled.section`
+    //background-color: powderblue;
     min-height: 100vh;
     text-align: center;
 `
