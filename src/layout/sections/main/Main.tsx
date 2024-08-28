@@ -23,6 +23,7 @@ const StyledMain = styled.section`
     //background-color: powderblue;
     min-height: 100vh;
     text-align: left;
+    margin-bottom: 92px;
 `
 
 const SmallText = styled.span`
