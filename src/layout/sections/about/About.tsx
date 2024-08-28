@@ -4,40 +4,51 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Skill} from "./skill/Skill";
 import {Button} from "../../../components/Button";
+import {Container} from "../../../components/Container";
+import {theme} from "../../../styles/Theme";
 
 export const About = () => {
     return (
         <StyledAbout>
+            <Container>
             <SectionTitle>ABOUT</SectionTitle>
             <FlexWrapper>
-                <StyledDescription>
+                <Description>
                     <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
                         consequatur aut perferendis doloribus asperiores repellat quia voluptas sit aspernatur te natus
                         accusan. maiores alias consequatur aut equatur aut perferendi.</p>
                     <Button>about me</Button>
-                </StyledDescription>
+                </Description>
 
-                <StyledSkills>
+                <Skills>
                     <Skill title={'Photoshop'}/>
                     <Skill title={'Illustrator'}/>
                     <Skill title={'Figma'}/>
                     <Skill title={'after effect'}/>
                     <Skill title={'indesign'}/>
-                </StyledSkills>
+                </Skills>
             </FlexWrapper>
+            </Container>
         </StyledAbout>
     );
 };
 
 const StyledAbout = styled.section`
-background-color: mistyrose;
-    min-height: 100vh;
+    ${SectionTitle} {
+        text-align: left;
+
+        &:before {
+            content: 'who am i';
+            left: 0%;
+            transform: translateX(100%);
+        }
+    }
 `
 
-const StyledDescription = styled.div`
+const Description = styled.div`
 
 `
 
-const StyledSkills = styled.div`
+const Skills = styled.div`
 
 `

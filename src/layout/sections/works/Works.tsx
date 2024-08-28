@@ -12,7 +12,7 @@ import {Button} from "../../../components/Button";
 export const Works = () => {
     return (
         <StyledWorks>
-            <SectionTitle>Portfolio</SectionTitle>
+            <SectionTitle extraText={'latest works'}>Portfolio</SectionTitle>
             <GridContainer>
                 <div><img src={img1} alt=""/><h4>magazine front design</h4></div>
                 <div><img src={img2} alt=""/><h4>coffee bottle mockup</h4></div>
