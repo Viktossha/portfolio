@@ -27,7 +27,6 @@ export const Works = () => {
 };
 
 const StyledWorks = styled.section`
-    background-color: seashell;
     min-height: 100vh;
 `
 
@@ -39,6 +38,26 @@ const GridContainer = styled.div`
     //grid-template-rows: masonry;
     
     h4 {
-        text-align: end;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 104%;
+        text-transform: lowercase;
+        color: #2f2f2f;
+        text-align: right;
+        margin-top: 18px;
+        width: max-content;
+        
+        position: relative;
+        
+        &::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background-color: #2f2f2f;
+            right: 0;
+            bottom: -10px;
+        }
     }
 `
