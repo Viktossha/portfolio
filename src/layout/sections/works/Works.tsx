@@ -28,6 +28,7 @@ export const Works = () => {
 
 const StyledWorks = styled.section`
     min-height: 100vh;
+    margin-bottom: 198px;
 `
 
 const GridContainer = styled.div`
