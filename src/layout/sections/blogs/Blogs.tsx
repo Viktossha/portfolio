@@ -8,36 +8,45 @@ import news_2 from "../../../assets/images/blogs_2.webp"
 import news_3 from "../../../assets/images/blogs_3.webp"
 import {Button} from "../../../components/Button";
 import arrBlack from "../../../assets/images/arrow-black.svg"
+import {Container} from "../../../components/Container";
 
 export const Blogs = () => {
     return (
         <StyledBlogs>
-            <SectionTitle>Blogs</SectionTitle>
-            <FlexWrapper justify={'space-around'}>
-               <News title={'Graphic Designing Useful Tips & Best Practices'} date={'Graphic Design   /   July 1, 2021'} src={news_1}/>
-               <News title={'basic typography rules for ui designing'} date={'Graphic Design   /   July 1, 2021'} src={news_2}/>
-               <News title={'top 10 graphic designs review in 2021'} date={'Graphic Design   /   July 1, 2021'} src={news_3}/>
-            </FlexWrapper>
-            <FlexWrapper justify={'center'}>
-                <Button>view all blogs</Button>
-            </FlexWrapper>
+            <Container>
+                <SectionTitle extraText={'latest news'}>Blogs</SectionTitle>
+                <FlexWrapper justify={'space-around'}>
+                    <News title={'Graphic Designing Useful Tips & Best Practices'} extra={'Graphic Design'}
+                          date={'July 1, 2021'} src={news_1}/>
+                    <News title={'basic typography rules for ui designing'} extra={'Graphic Design'}
+                          date={'July 1, 2021'} src={news_2}/>
+                    <News title={'top 10 graphic designs review in 2021'} extra={'Graphic Design'} date={'July 1, 2021'}
+                          src={news_3}/>
+                </FlexWrapper>
+                <FlexWrapper justify={'center'}>
+                    <Button>view all blogs</Button>
+                </FlexWrapper>
+            </Container>
         </StyledBlogs>
     );
 };
 
 const StyledBlogs = styled.section`
-    background-color: beige;
-    min-height: 100vh;
-    
-    ${FlexWrapper}:first-of-type {
-        margin-bottom: 62px;
+    ${Container} {
+        padding: 0;
     }
-    
+
+    ${FlexWrapper}:first-of-type {
+        margin: 62px 0;
+        gap: 46px;
+    }
+
     ${Button} {
         background-color: transparent;
         border: none;
         color: #111111;
-        
+        margin-bottom: 200px;
+
         &::after {
             content: url("${arrBlack}");;
         }
