@@ -24,6 +24,16 @@ const StyledMain = styled.section`
     min-height: 100vh;
     text-align: left;
     margin-bottom: 92px;
+    
+    ${Button} {
+        border-color: #FFFFFF;
+        background-color: transparent;
+        padding: 18px 52px;
+        
+        &::after {
+            content: none;
+        }
+    }
 `
 
 const SmallText = styled.span`
@@ -48,4 +58,5 @@ const Text = styled.p`
     font-weight: 400;
     font-size: 24px;
     letter-spacing: 0.02em;
+    margin-bottom: 67px;
 `

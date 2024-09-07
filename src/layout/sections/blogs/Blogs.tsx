@@ -7,6 +7,7 @@ import news_1 from "../../../assets/images/blogs_1.webp"
 import news_2 from "../../../assets/images/blogs_2.webp"
 import news_3 from "../../../assets/images/blogs_3.webp"
 import {Button} from "../../../components/Button";
+import arrBlack from "../../../assets/images/arrow-black.svg"
 
 export const Blogs = () => {
     return (
@@ -17,7 +18,9 @@ export const Blogs = () => {
                <News title={'basic typography rules for ui designing'} date={'Graphic Design   /   July 1, 2021'} src={news_2}/>
                <News title={'top 10 graphic designs review in 2021'} date={'Graphic Design   /   July 1, 2021'} src={news_3}/>
             </FlexWrapper>
-            <Button>view all blogs</Button>
+            <FlexWrapper justify={'center'}>
+                <Button>view all blogs</Button>
+            </FlexWrapper>
         </StyledBlogs>
     );
 };
@@ -25,4 +28,18 @@ export const Blogs = () => {
 const StyledBlogs = styled.section`
     background-color: beige;
     min-height: 100vh;
+    
+    ${FlexWrapper}:first-of-type {
+        margin-bottom: 62px;
+    }
+    
+    ${Button} {
+        background-color: transparent;
+        border: none;
+        color: #111111;
+        
+        &::after {
+            content: url("${arrBlack}");;
+        }
+    }
 `

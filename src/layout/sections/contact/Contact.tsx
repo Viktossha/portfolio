@@ -32,7 +32,13 @@ const StyledContact = styled.section`
 `
 
 const Subscription = styled.div`
-
+    ${Button} {
+        padding: 11px 87px;    
+        
+        &::after {
+            content: none;
+        }
+    }
 `
 
 const MainAddress = styled.div`
