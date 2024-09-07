@@ -8,10 +8,12 @@ import img4 from "../../../assets/images/work-4.webp"
 import img5 from "../../../assets/images/work-5.webp"
 import img6 from "../../../assets/images/work-6.webp"
 import {Button} from "../../../components/Button";
+import {Container} from "../../../components/Container";
 
 export const Works = () => {
     return (
         <StyledWorks>
+            <Container>
             <SectionTitle extraText={'latest works'}>Portfolio</SectionTitle>
             <GridContainer>
                 <div><img src={img1} alt=""/><h4>magazine front design</h4></div>
@@ -22,6 +24,7 @@ export const Works = () => {
                 <div><img src={img6} alt=""/><h4>perfume brand identity</h4></div>
             </GridContainer>
             <Button>view all portfolio</Button>
+            </Container>
         </StyledWorks>
     );
 };
