@@ -22,4 +22,5 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     //background-color: lemonchiffon;
+    //margin-bottom: 130px;
 `
