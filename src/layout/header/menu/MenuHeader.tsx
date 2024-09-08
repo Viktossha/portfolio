@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 
-export const Menu = (props: {menuItems: Array<string>}) => {
+export const MenuHeader = (props: {menuItems: Array<string>}) => {
     return (
         <StyledMenu>
             <ul>
