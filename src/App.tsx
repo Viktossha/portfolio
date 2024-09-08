@@ -6,7 +6,7 @@ import {Works} from "./layout/sections/works/Works";
 import {Achievements} from "./layout/sections/achievements/Achievements";
 import {Blogs} from "./layout/sections/blogs/Blogs";
 import {Testimonials} from "./layout/sections/testimonials/Testimonials";
-import {Contact} from "./layout/sections/contact/Contact";
+import {Contacts} from "./layout/sections/contacts/Contacts";
 import {Quote} from "./layout/sections/quote/Quote";
 import {Footer} from "./layout/footer/Footer";
 
@@ -22,7 +22,7 @@ function App() {
             <Achievements/>
             <Blogs/>
             <Testimonials/>
-            <Contact/>
+            <Contacts/>
             <Footer/>
         </div>
     );

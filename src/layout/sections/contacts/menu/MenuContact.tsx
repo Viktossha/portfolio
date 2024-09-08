@@ -13,17 +13,21 @@ export const MenuContacts = (props: {menuItems: Array<string>}) => {
 
 const StyledMenu = styled.nav`
     width: 33%;
+    margin-left: 146px;
+    margin-right: 108px;
+    
      ul {
          display: flex;
-         gap: 30px;
          flex-wrap: wrap;
          flex-direction: column;
+         max-height: 60%;
+         row-gap: 30px;
+         column-gap: 106px;
+         justify-content: center;
      }
 `
 
 const ListItem = styled.li`
-width: 50%;
-
     &:hover {
         opacity: 0.5;
     }

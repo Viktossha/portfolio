@@ -20,6 +20,7 @@ const StyledTestimonials = styled.section`
     background-image: url("${bg}");
     background-color: #000000;
     padding: 110px 0 145px;
+    margin-bottom: 160px;
 
     ${SectionTitle} {
         color: #333;
