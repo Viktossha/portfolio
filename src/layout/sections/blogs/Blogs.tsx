@@ -32,9 +32,10 @@ export const Blogs = () => {
 };
 
 const StyledBlogs = styled.section`
-    ${Container} {
-        padding: 0;
-    }
+    margin-bottom: 200px;  
+    // ${Container} {
+    //     padding: 0;
+    // }
 
     ${FlexWrapper}:first-of-type {
         margin: 62px 0;
@@ -45,7 +46,6 @@ const StyledBlogs = styled.section`
         background-color: transparent;
         border: none;
         color: #111111;
-        margin-bottom: 200px;
 
         &::after {
             content: url("${arrBlack}");;
